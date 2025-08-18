@@ -1,0 +1,33 @@
+@import './variables.scss';
+
+// 重置样式
+* {
+  box-sizing: border-box;
+}
+
+// 组件库的基础样式
+.vd-component {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-size: $font-size-base;
+  color: $text-color-primary;
+  line-height: 1.5;
+}
+
+// 工具类
+.vd-clearfix::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.vd-sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
